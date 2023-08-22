@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".portfolioFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alef"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"
+                    android:text="@string/project_experience" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alef"
+                    android:justificationMode="inter_word"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="gravity"
+                    android:text="@string/project_description"
+                    android:id="@+id/description"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    android:backgroundTint="@color/cardColor"
+                    app:cardUseCompatPadding="true"
+                    android:id="@+id/classroom_app_card">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/alef"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="Classroom Application"
+                            android:id="@+id/head1"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/alef"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="This is an android application based on Java and Android Studio. It has features like applying OD, viewing the attendance, margins and time table for classes too by extracting the data from academia using REST Api and SpringBoot Framework.\n\nTo Know more about this project"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/alef"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Click here...."
+                            android:id="@+id/classroom_app_click"
+                            />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    android:backgroundTint="@color/cardColor"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/alef"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="OTT Subscription Management"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/alef"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="It is a python project based on selenium and tikinter to scrape the web data from Netflix website and notify the user before the expiry of their subscription plan. It would also view basic details of the user, subscription plan and expiry date in addition to providing the notification for expiry.\nTo know more about this project"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/alef"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Click here...."
+                            android:id="@+id/ott_click"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+                    android:backgroundTint="@color/cardColor"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/alef"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="Bus Management System"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/alef"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="This project is C++ project based on Object Oriented Programming that would simulate a modern bus ticket management system by allowing the users and admins to login with their credentials and allow functionalities of adding, removing buses, booking tickets, etc for the admin and booking and canceling tickets for users.\nTo know more about this project"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/alef"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Click here...."
+                            android:id="@+id/bus_management_click"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sandesh\'s Portfolio</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_name">Sandesh\nPandey</string>
+    <string name="my_info">Android Developer | Learning Enthusiast</string>
+    <string name="my_intro">Short Intro</string>
+    <string name="major_projects">Major Projects</string>
+    <string name="project_experience">Project Experiences</string>
+    <string name="project_description">The most recent project I am working on currently is Classroom Application. It is an android application project based on Java. It uses almost every features like Rest APIs, SpringFrameWork, Databases. Apart from that I have worked on simple projects like Bus Management System using OOPs in C++ and OTT Management using Python. Some portfolios of my works are-</string>
+    <string name="my_projects">Classroom Android Application (Java)\nOTT Subscription Management (Python)\nBus Management System (C++)</string>
+    <string name="Bio">Sandesh Pandey, a student at SRM University with a passion for Computer science and currently pursuing CSE. I am a Tech-Driven Trailblazer poised to script a narrative that will inspire generations to come. It is not just about books and codes – I love cricket and online action games too. I thrive on building cool projects and writing code that makes things work.</string>
+</resources>
