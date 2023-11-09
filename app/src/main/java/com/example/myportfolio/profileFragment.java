@@ -28,10 +28,10 @@ public class profileFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        github=view.findViewById(R.id.github_logo);
-        insta=view.findViewById(R.id.instagram_logo);
-        facebook=view.findViewById(R.id.facebook_logo);
-        linkedin=view.findViewById(R.id.linked_logo);
+        github = view.findViewById(R.id.github_logo);
+        insta = view.findViewById(R.id.instagram_logo);
+        facebook = view.findViewById(R.id.facebook_logo);
+        linkedin = view.findViewById(R.id.linked_logo);
 
         github.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,7 +65,7 @@ public class profileFragment extends Fragment {
     }
 
     private void gotoUrl(String s) {
-        Uri uri=Uri.parse(s);
-        startActivity(new Intent(Intent.ACTION_VIEW,uri));
+        Uri uri = Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW, uri));
     }
 }

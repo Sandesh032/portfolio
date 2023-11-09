@@ -14,6 +14,7 @@
     <color name="loginColor">#445037</color>
 
     <color name="background">#F2F8F3</color>
+    <color name="transparent">#D7F2F8F3</color>
     <color name="banner">#f1e9ce</color>
     <color name="lightBanner">#56f1e9ce</color>
 

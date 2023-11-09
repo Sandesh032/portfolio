@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".profileFragment">
 
@@ -22,71 +22,67 @@
                 android:layout_marginTop="80dp"
                 android:fontFamily="@font/iceberg"
                 android:text="Find Me On"
-                android:textSize="30sp"
                 android:textAlignment="center"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:textSize="30sp" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_marginTop="50dp"
                 android:layout_height="400dp"
                 android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/box_background"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="15dp"
-                android:backgroundTint="@color/box_background"
                 app:cardUseCompatPadding="true">
 
                 <RelativeLayout
+                    android:id="@+id/relLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/relLayout"
                     android:layout_marginTop="15dp">
 
                     <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/github_logo"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:padding="3dp"
                         android:layout_marginLeft="25dp"
-                        android:src="@drawable/github"
                         android:adjustViewBounds="true"
-                        app:shapeAppearanceOverlay="@style/roundImage"
                         android:background="@color/grey"
-                        android:id="@+id/github_logo"
-                        />
+                        android:padding="3dp"
+                        android:src="@drawable/github"
+                        app:shapeAppearanceOverlay="@style/roundImage" />
 
                     <ImageView
+                        android:id="@+id/linked_logo"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/linkedin"
-                        android:id="@+id/linked_logo"
+                        android:layout_alignParentRight="true"
                         android:layout_marginLeft="60dp"
                         android:layout_marginRight="25dp"
-                        android:layout_alignParentRight="true"
-                        />
+                        android:src="@drawable/linkedin" />
 
                     <ImageView
+                        android:id="@+id/instagram_logo"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/insta"
-                        android:id="@+id/instagram_logo"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="15dp"
                         android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="15dp"
-                        />
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/insta" />
 
                     <ImageView
+                        android:id="@+id/facebook_logo"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/facebook"
-                        android:id="@+id/facebook_logo"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="15dp"
                         android:layout_marginTop="165dp"
                         android:layout_marginRight="25dp"
-                        />
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/facebook" />
 
                 </RelativeLayout>
 

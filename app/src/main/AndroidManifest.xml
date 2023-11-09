@@ -20,18 +20,6 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".portfolio"
-            android:exported="false" />
-        <activity
-            android:name=".home"
-            android:exported="false" />
-        <activity
-            android:name=".profile"
-            android:exported="false" />
-        <activity
-            android:name=".cv"
-            android:exported="false" />
-        <activity
             android:name=".Dashboard"
             android:exported="false" />
         <activity

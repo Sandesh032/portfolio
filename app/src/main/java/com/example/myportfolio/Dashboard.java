@@ -14,27 +14,25 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class Dashboard extends AppCompatActivity {
     BottomNavigationView bnView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        bnView=findViewById(R.id.bnView);
+        bnView = findViewById(R.id.bnView);
 
         bnView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int id=item.getItemId();
-                if(id==R.id.nav_home) {
+                int id = item.getItemId();
+                if (id == R.id.nav_home) {
                     loadFragment(new homeFragment(), false);
-                }
-                else if(id==R.id.nav_cv) {
-                    loadFragment(new cvFragment(),false);
-                }
-                else if(id==R.id.nav_profiles) {
-                    loadFragment(new profileFragment(),false);
-                }
-                else if(id==R.id.nav_projects) {
+                } else if (id == R.id.nav_cv) {
+                    loadFragment(new cvFragment(), false);
+                } else if (id == R.id.nav_profiles) {
+                    loadFragment(new profileFragment(), false);
+                } else if (id == R.id.nav_projects) {
                     loadFragment(new portfolioFragment(), false);
                 }
                 return true;
@@ -42,10 +40,11 @@ public class Dashboard extends AppCompatActivity {
         });
         bnView.setSelectedItemId(R.id.nav_home);
     }
+
     public void loadFragment(Fragment fragment, boolean flag) {
-        FragmentManager fm=getSupportFragmentManager();
-        FragmentTransaction ft=fm.beginTransaction();
-        if(flag) ft.add(R.id.container, fragment);
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        if (flag) ft.add(R.id.container, fragment);
         else ft.replace(R.id.container, fragment);
         ft.commit();
     }

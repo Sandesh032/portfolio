@@ -32,6 +32,7 @@ public class cvFragment extends Fragment {
     public cvFragment() {
         // Required empty public constructor
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,39 +44,38 @@ public class cvFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_cv, container, false);
 
-        imageView=view.findViewById(R.id.resumeImage);
-        btnDownload=view.findViewById(R.id.btnDownload);
+        imageView = view.findViewById(R.id.resumeImage);
+        btnDownload = view.findViewById(R.id.btnDownload);
 
         btnDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bitmapDrawable=(BitmapDrawable) imageView.getDrawable();
-                bitmap=bitmapDrawable.getBitmap();
+                bitmapDrawable = (BitmapDrawable) imageView.getDrawable();
+                bitmap = bitmapDrawable.getBitmap();
 
-                FileOutputStream fileOutputStream=null;
+                FileOutputStream fileOutputStream = null;
 
-                File sdCard= Environment.getExternalStorageDirectory();
-                File Directory=new File(sdCard.getAbsolutePath()+"/Download");
+                File sdCard = Environment.getExternalStorageDirectory();
+                File Directory = new File(sdCard.getAbsolutePath() + "/Download");
                 Directory.mkdir();
 
-                String filename=String.format("%d.jpg",System.currentTimeMillis());
-                File outfile=new File(Directory,filename);
+                String filename = String.format("%d.jpg", System.currentTimeMillis());
+                File outfile = new File(Directory, filename);
 
                 try {
-                    fileOutputStream=new FileOutputStream(outfile);
-                    bitmap.compress(Bitmap.CompressFormat.JPEG,100,fileOutputStream);
+                    fileOutputStream = new FileOutputStream(outfile);
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fileOutputStream);
                     fileOutputStream.flush();
                     fileOutputStream.close();
 
-                    Intent intent=new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+                    Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
                     intent.setData(Uri.fromFile(outfile));
                     requireContext().sendBroadcast(intent);
 
                     Toast.makeText(getContext(), "CV Downloaded successfully", Toast.LENGTH_SHORT).show();
-                }catch (FileNotFoundException e) {
+                } catch (FileNotFoundException e) {
                     e.printStackTrace();
-                }
-                catch (IOException e) {
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
